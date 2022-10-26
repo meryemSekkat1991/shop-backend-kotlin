@@ -1,11 +1,10 @@
 package com.meryem.shoppingkotlin.entity
 
-import com.meryem.shoppingkotlin.entity.ProductCategory
 import lombok.Data
-import java.math.BigDecimal
 import org.hibernate.annotations.CreationTimestamp
 import org.hibernate.annotations.UpdateTimestamp
-import java.util.*
+import java.math.BigDecimal
+import java.util.Date
 import javax.persistence.*
 
 @Entity
