@@ -49,4 +49,8 @@ class Product {
     @Column(name = "last_updated")
     @UpdateTimestamp
     private val lastUpdated: Date? = null
+
+    override fun toString(): String {
+        return "Product(id=$id, name='$name', category='$category', date=${lastUpdated})"
+    }
 }
