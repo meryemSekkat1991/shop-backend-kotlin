@@ -9,4 +9,6 @@ class ProductService( val productRepository: ProductRepository) {
     fun getAll() =  productRepository.findAll()
 
     fun saveProduct(product: Product) = productRepository.save(product)
+
+    fun findById(productId: Long) = productRepository.findById(productId)
 }
