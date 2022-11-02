@@ -1,13 +1,12 @@
 package com.meryem.shoppingkotlin.service
 
-import com.meryem.shoppingkotlin.dao.ProductRepository
-import com.meryem.shoppingkotlin.dto.ProductDTO
+import com.meryem.shoppingkotlin.repository.ProductRepository
+import com.meryem.shoppingkotlin.entity.Product
 import org.springframework.stereotype.Service
 
 @Service
 class ProductService( val productRepository: ProductRepository) {
-    fun addProduct(productDTO: ProductDTO){
+    fun getAll() =  productRepository.findAll()
 
-    }
-
+    fun saveProduct(product: Product) = productRepository.save(product)
 }
