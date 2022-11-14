@@ -1,4 +1,5 @@
 package com.meryem.shoppingkotlin.entity
+import java.math.BigDecimal
 import javax.persistence.*
 
 @Entity
@@ -9,8 +10,10 @@ data class Product(
     val name: String = "",
     val sku: String? = "",
     val description: String = "",
-    val price: Int = 0,
-    val unit_price: Int = 0,
+    val price: BigDecimal,
+    @Transient
+    val price_total: BigDecimal,
+    val unit_price: String,
     val image_url: String = ""
 )
 
