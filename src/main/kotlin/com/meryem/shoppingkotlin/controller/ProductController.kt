@@ -4,9 +4,6 @@ import com.meryem.shoppingkotlin.dto.ProductDTO
 import com.meryem.shoppingkotlin.entity.Product
 import com.meryem.shoppingkotlin.repository.ProductRepository
 import com.meryem.shoppingkotlin.service.ProductService
-import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.Validate
-import org.springframework.http.HttpStatus
-import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.*
 import java.util.*
 
